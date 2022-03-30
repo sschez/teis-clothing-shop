@@ -29,6 +29,7 @@
         </table>
         <div class="row">
             <div class="text-end">
+                <a href="{{ route('product.index') }}" class="btn bg-info text-white mb-2">Back</a>
                 <a class="btn btn-outline-secondary mb-2"><b>Total to pay:</b> ${{ $viewData["total"] }}</a>
                 @if (count($viewData["products"]) > 0)
                 <a href="{{ route('cart.purchase') }}" class="btn bg-primary text-white mb-2">Purchase</a>
